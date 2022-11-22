@@ -1,9 +1,9 @@
 name: 'Setup Hurl'
 description: 'Setup Hurl and add it to the PATH'
 author: 'Niklas Mollenhauer'
-inputs: 
+inputs:
   hurl-version:
     description: 'The hurl version to download (if necessary) and use. Supports semver spec and ranges.'
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'dist/index.js'
