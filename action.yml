@@ -5,5 +5,7 @@ inputs:
   hurl-version:
     description: 'The hurl version to download (if necessary) and use. Supports semver spec and ranges.'
 runs:
-  using: 'node16'
-  main: 'dist/index.js'
+  using: composite
+  steps:
+  - run: npm i -g "@orangeopensource/hurl@${{ inputs.hurl-version }}"
+    shell: bash
