@@ -9,3 +9,5 @@ runs:
   steps:
   - run: npm i -g "@orangeopensource/hurl@${{ inputs.hurl-version }}"
     shell: bash
+  - run: hurl --version
+    shell: bash
