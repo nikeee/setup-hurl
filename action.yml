@@ -4,6 +4,8 @@ author: 'Niklas Mollenhauer'
 inputs:
   hurl-version:
     description: 'The hurl version to download (if necessary) and use. Supports semver spec and ranges.'
+    default: latest
+
 runs:
   using: composite
   steps:
