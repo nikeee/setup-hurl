@@ -1,5 +1,4 @@
 # setup-hurl
-
 A GitHub Action to set up [Hurl](https://github.com/Orange-OpenSource/hurl).
 
 ## Getting Started
@@ -12,6 +11,6 @@ By default, the [latest GitHub Release of Hurl](https://github.com/Orange-OpenSo
 ```yaml
     - uses: nikeee/setup-hurl@v2
       with:
-        hurl-version: ^1.6.0
+        version: ^4.1.0
     - run: hurl --version
 ```

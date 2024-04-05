@@ -2,14 +2,14 @@ name: 'Setup Hurl'
 description: 'Setup Hurl and add it to the PATH'
 author: 'Niklas Mollenhauer'
 inputs:
-  hurl-version:
+  version:
     description: 'The hurl version to download (if necessary) and use. Supports semver spec and ranges.'
     default: 'latest'
 
 runs:
   using: composite
   steps:
-  - run: sudo npm i -g "@orangeopensource/hurl@$INPUT_HURL-VERSION"
+  - run: sudo npm i -g "@orangeopensource/hurl@$INPUT_VERSION"
     shell: bash
   - run: hurl --version
     shell: bash
