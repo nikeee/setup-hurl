@@ -4,12 +4,12 @@ author: 'Niklas Mollenhauer'
 inputs:
   hurl-version:
     description: 'The hurl version to download (if necessary) and use. Supports semver spec and ranges.'
-    default: latest
+    default: 'latest'
 
 runs:
   using: composite
   steps:
-  - run: npm i -g "@orangeopensource/hurl@${{ inputs.hurl-version }}"
+  - run: sudo npm i -g "@orangeopensource/hurl@$INPUT_HURL-VERSION"
     shell: bash
   - run: hurl --version
     shell: bash
