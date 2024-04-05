@@ -11,6 +11,6 @@ By default, the [latest GitHub Release of Hurl](https://github.com/Orange-OpenSo
 ```yaml
     - uses: nikeee/setup-hurl@v2
       with:
-        version: ^4.1.0
+        hurl-version: ^4.1.0
     - run: hurl --version
 ```
